@@ -1,0 +1,89 @@
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  box-shadow: 0 0 5px 0 #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  &:nth-child(1){
+      columns: 5;
+  }
+
+  &:hover {
+      box-shadow: 0 5px 10px #eee;
+      transform: scale(.99);
+  }
+}
+
+.quote {
+  &-category {
+    display: flex;
+    align-self: flex-end;
+    padding: 0.325rem 0.65rem;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+
+    &.personal {
+      background: rgb(60, 0, 128);
+      color: #fff;
+    }
+
+    &.mysticism {
+      background: #f3f3f3;
+    }
+
+    &.social {
+      background: rgb(98, 248, 98);
+    }
+  }
+
+  q {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      font-style: italic;
+      font-weight: 500;
+  }
+
+  &-identity {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+
+    &__image {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+
+      img {
+        display: block;
+        border-radius: 50%;
+      }
+    }
+
+    &__name {
+      font-weight: bold;
+      opacity: .85;
+    }
+  }
+
+  &-actions {
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
