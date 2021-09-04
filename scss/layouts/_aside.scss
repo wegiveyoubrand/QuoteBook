@@ -4,9 +4,12 @@
   min-height: 100vh;
   width: auto;
   white-space: nowrap;
-  // padding: 2rem 0;
 
   &.active {
-    width: 200px;
+    width: auto;
+    ul {
+  padding: 0 20px;
+
+    }
   }
 }
