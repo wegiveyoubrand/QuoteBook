@@ -1,163 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <title>QuoteBook</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="grid-flex-row">
-        <div class="flex_col">
-            <aside class="aside">
-                <ul class="categories">
-                    <h3>By Catgories</h3>
+      <!-- Side view -->
+      <div class="side_grid">
+        <aside class="aside">
+          <ul class="categories">
+            <h3>By Catgories</h3>
 
-                    <li class="category"><a href="">Personal</a>
-                        <span class="stat">200</span>
-                    </li>
-                    <li class="category"><a href="">Love</a>
-                        <span class="stat">2190</span>
-                    </li>
-                    <li class="category"><a href="">Political</a>
-                        <span class="stat">240</span>
-                    </li>
-                    <li class="category"><a href="">Social</a>
-                        <span class="stat">200</span>
-                    </li>
-                    <li class="category"><a href="">Ethics</a>
-                        <span class="stat">120</span>
-                    </li>
-                    <li class="category"><a href="">War</a>
-                        <span class="stat">420</span>
-                    </li>
-                    <li class="category"><a href="">Religion</a>
-                        <span class="stat">10</span>
-                    </li>
-                    <li class="category"><a href="">Mysticism</a>
-                        <span class="stat">123</span>
-                    </li>
-                </ul>
-            </aside>
-        </div>
-        <div class="flex__col">
-            <header class="header">
-                <h2 class="website-name">Quote Book</h2>
+            <li class="category">
+              <a href="">Personal</a>
+              <span class="stat">200</span>
+            </li>
+            <li class="category">
+              <a href="">Love</a>
+              <span class="stat">2190</span>
+            </li>
+            <li class="category">
+              <a href="">Political</a>
+              <span class="stat">240</span>
+            </li>
+            <li class="category">
+              <a href="">Social</a>
+              <span class="stat">200</span>
+            </li>
+            <li class="category">
+              <a href="">Ethics</a>
+              <span class="stat">120</span>
+            </li>
+            <li class="category">
+              <a href="">War</a>
+              <span class="stat">420</span>
+            </li>
+            <li class="category">
+              <a href="">Religion</a>
+              <span class="stat">10</span>
+            </li>
+            <li class="category">
+              <a href="">Mysticism</a>
+              <span class="stat">123</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- End of side view -->
 
-                <div class="menu-toggle">
-                    <span></span>
-                </div>
-            </header>
-            <main class="main">
-                <div class="quotes cards">
-                    <div class="quote quote-card">
-                        <div class="quote-category personal">
-                            Personal
-                        </div>
-                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vero incidunt unde
-                            quisquam dignissimos quas.</q>
-                        <div class="quote-identity">
-                            <div class="quote-identity__image">
-                                <img src="./img/qouter-1.jpg" alt="">
-                            </div>
-                            <div class="quote-identity__name">
-                                Fredrick Lumar
-                            </div>
-                        </div>
-                        <div class="quote-actions">
-                            <i class="">Like</i>
-                            <i class="">Share</i>
-                            <i class="">Note</i>
-                        </div>
-                    </div>
-                    <div class="quote quote-card">
-                        <div class="quote-category mysticism">
-                            Mysticism
-                        </div>
-                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vero incidunt unde
-                            quisquam dignissimos quas.</q>
-                        <div class="quote-identity">
-                            <div class="quote-identity__image">
-                                <img src="./img/qouter-1.jpg" alt="">
-                            </div>
-                            <div class="quote-identity__name">
-                                Fredrick Lumar
-                            </div>
+      <!-- Main view -->
+      <div class="main_grid">
+        <header class="header">
+          <h2 class="website-name">Quote Book</h2>
 
-                        </div>
-                        <div class="quote-actions">
-                            <i class="">Like</i>
-                            <i class="">Share</i>
-                            <i class="">Note</i>
-                        </div>
-                    </div>
-                    <div class="quote quote-card">
-                        <div class="quote-category social">
-                            Social
-                        </div>
-                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vero incidunt unde
-                            quisquam dignissimos quas.</q>
-                        <div class="quote-identity">
-                            <div class="quote-identity__image">
-                                <img src="./img/qouter-1.jpg" alt="">
-                            </div>
-                            <div class="quote-identity__name">
-                                Fredrick Lumar
-                            </div>
-                        </div>
-                        <div class="quote-actions">
-                            <i class="">Like</i>
-                            <i class="">Share</i>
-                            <i class="">Note</i>
-                        </div>
-                    </div>
-                    <div class="quote quote-card">
-                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vero incidunt unde
-                            quisquam dignissimos quas.</q>
-                        <div class="quote-identity">
-                            <div class="quote-identity__image">
-                                <img src="./img/qouter-1.jpg" alt="">
-                            </div>
-                            <div class="quote-identity__name">
-                                Fredrick Lumar
-                            </div>
-                        </div>
-                        <div class="quote-actions">
-                            <i class="">Like</i>
-                            <i class="">Share</i>
-                            <i class="">Note</i>
-                        </div>
-                    </div>
-                    <div class="quote quote-card">
-                        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vero incidunt unde
-                            quisquam dignissimos quas.</q>
-                        <div class="quote-identity">
-                            <div class="quote-identity__image">
-                                <img src="./img/qouter-1.jpg" alt="">
-                            </div>
-                            <div class="quote-identity__name">
-                                Fredrick Lumar
-                            </div>
-                        </div>
-                        <div class="quote-actions">
-                            <i class="">Like</i>
-                            <i class="">Share</i>
-                            <i class="">Note</i>
-                        </div>
-                    </div>
-
-                </div>
-            </main>
-            <footer>
-                footer
-            </footer>
-        </div>
-
+          <div class="menu-toggle">
+            <span></span>
+          </div>
+        </header>
+        <main class="main">
+          <div class="quotes cards"></div>
+        </main>
+        <footer>footer</footer>
+      </div>
+      <!-- End of main view -->
     </div>
-</body>
-
+    <script src="/index.js" type="module"></script>
+  </body>
 </html>
