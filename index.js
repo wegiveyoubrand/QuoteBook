@@ -1,9 +1,8 @@
 // Quotes module
 
-import { PORT, SERVER } from "./server/config.js";
+import { SERVER } from "/server/config.js";
 const quotesContainer = document.querySelector(".quotes");
 let quoteCardTemp = "";
-console.log(PORT);
 
 function loadJSON() {
   fetch(`${SERVER}/server/data/quotes.json`)
